@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content" app:cardCornerRadius="10dp"
+                                   android:layout_margin="10dp" android:layout_centerInParent="true">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:gravity="center"
+            android:background="@color/colorLightGrey">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/logo_champ_0"
+                android:id="@+id/main_card_img" android:contentDescription="immagine campionato"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        <TextView
+                android:text="LEON SUPERCOPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/main_card_txt" android:textSize="24sp"
+                android:textStyle="bold|italic" android:textAlignment="center"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        <TextView
+                android:text="Cliccare sulla card per avere maggiori info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textStyle="italic"
+                android:textAlignment="center"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

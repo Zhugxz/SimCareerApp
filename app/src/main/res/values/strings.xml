@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SimCareerApp</string>
+    <string name="registrati">REGISTRATI</string>
+    <string name="email">Email*</string>
+    <string name="password">Password*</string>
+    <string name="ricordami">Ricordami</string>
+    <string name="accedi">Accedi</string>
+    <string name="hai_dimenticato_la_password">Hai dimenticato la password?</string>
+    <string name="background_card">background card</string>
+    <string name="application_logo">application logo</string>
+    <string name="accedi_stampatello">ACCEDI</string>
+    <string name="forum_campionati">
+        <u>Forum campionato</u>
+    </string>
+
+
+</resources>

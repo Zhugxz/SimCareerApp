@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.ProfileActivity">
+
+    <include layout="@layout/topnavbar_layout" android:id="@+id/profile_toolbar"
+             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" android:layout_height="wrap_content"
+             android:layout_width="0dp"/>
+
+    <ScrollView
+            app:layout_constraintTop_toBottomOf="@id/profile_toolbar"
+            app:layout_constraintBottom_toTopOf="@id/profile_bottombar"
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingLeft="40dp" android:paddingRight="40dp" android:paddingBottom="40dp">
+            <TextView
+                    android:text="Foto di profilo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Clicca sull'immagine per caricare una nuova foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+            <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp" android:id="@+id/modifica_profilo_img_profilo"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" android:layout_gravity="center" android:elevation="2dp"/>
+            <TextView
+                    android:text="Informazioni personali"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_username"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/profile_input_background"
+            />
+            <TextView
+                    android:text="Nome utente*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10" android:padding="10dp" android:enabled="false"
+                    android:id="@+id/modifica_profilo_input_email"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp" android:textColor="@color/colorDarkGrey"/>
+            <TextView
+                    android:text="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_password"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_nome"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Nome*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_cognome"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Cognome*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="date"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_dataNascita"
+                    android:background="@drawable/profile_input_background"
+                    android:hint="use format YYYY-MM-DD"/>
+            <TextView
+                    android:text="Data di nascita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_residenza"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Residenza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <TextView
+                    android:text="Preferenze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp" android:textStyle="bold"
+                    android:layout_marginTop="25dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="numberSigned"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_numeroGara"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="20dp"/>
+            <TextView
+                    android:text="Numero di gara preferito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_circuitoPreferito"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Circuito preferito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_circuitoOdiato"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Circuito odiato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:ems="10" android:padding="10dp"
+                    android:id="@+id/modifica_profilo_input_auto"
+                    android:background="@drawable/profile_input_background"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:text="Auto preferita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="SALVA MODIFICHE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/modifica_profilo_salva"
+                    android:background="@drawable/button_background" android:textColor="@android:color/white"
+                    android:textStyle="bold" android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include layout="@layout/bottomnavbar_layout" android:layout_height="wrap_content" android:layout_width="match_parent"
+             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" android:id="@+id/profile_bottombar"
+             app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

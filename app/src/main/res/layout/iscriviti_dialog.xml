@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:padding="20dp">
+    <TextView
+            android:text="Iscrizione al campionato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textSize="20dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:ems="10" android:padding="10dp"
+            android:id="@+id/iscriviti_team"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/profile_input_background"
+    />
+    <TextView
+            android:text="Team*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:id="@+id/iscriviti_spinner"
+    />
+    <TextView
+            android:text="Auto*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+</LinearLayout>

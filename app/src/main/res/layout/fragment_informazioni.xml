@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.fragment.InformazioniFragment" android:layout_centerInParent="true"
+>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="20dp">
+
+        <ImageView
+                android:src="@drawable/logo_champ_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/info_img" android:scaleType="centerCrop"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        <TextView
+                android:text="LEON SUPERCOPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/info_txt_title" android:textSize="24sp"
+                android:textStyle="bold"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+        <TextView
+                android:text="@string/forum_campionati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        <TextView
+                android:text="Calendario eventi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:textStyle="bold"/>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="20dp" android:paddingRight="20dp"
+                android:id="@+id/info_table_eventi"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        <TextView
+                android:text="Impostazioni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:textStyle="bold"/>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="20dp" android:paddingRight="20dp"
+                android:id="@+id/info_table_impostazioni"/>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        <TextView
+                android:text="Lista degli iscritti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp"
+                android:textStyle="bold"/>
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:paddingLeft="20dp" android:paddingRight="20dp"
+                    android:id="@+id/info_table_iscritti"/>
+        </HorizontalScrollView>
+        <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/info_btn_iscriviti"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp" android:background="@drawable/button_background"
+                android:textColor="@android:color/white" android:textSize="18sp" android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" android:textOff="ISCRIVITI" android:textOn="CANCELLA ISCRIZIONE"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+    </LinearLayout>
+</ScrollView>

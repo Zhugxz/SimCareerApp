@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="GALLERIA" android:id="@+id/menu_bottom_item_galleria"/>
+    <item android:title="CAMPIONATI" android:id="@+id/menu_bottom_item_campionati"/>
+    <item android:title="PROFILO" android:id="@+id/menu_bottom_item_profilo"/>
+</menu>

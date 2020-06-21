@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGreenTheme">#32883C</color>
+    <color name="colorBlackTheme">#000000</color>
+    <color name="colorInput">#1AFFFFFF</color> <!-- opacity 10% -->
+    <color name="colorShadow">#59000000</color> <!-- opacity 35% -->
+    <color name="colorLightGrey">#F2F2F2</color>
+    <color name="colorDarkGrey">#7F7F7F</color>
+</resources>
